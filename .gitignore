@@ -1,0 +1,35 @@
+## Vim ##
+*.swp
+*.swo
+*.un~
+Session.vim
+.netrwhist
+*~
+
+## Python ##
+*.py[cod]
+*.so
+*.egg
+*.egg-info
+dist
+build
+
+
+## JetBrains ##
+
+.idea/
+*.ipr
+*.iws
+*.iml
+out/
+.idea_modules/
+atlassian-ide-plugin.xml
+com_crashlytics_export_strings.xml
+
+
+## Project ##
+.DS_Store
+
+## myconfig ##
+.alfredversionchecked
+
