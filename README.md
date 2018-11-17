@@ -46,5 +46,5 @@
 
 
 ### 示例图
-![](http://tc.ganzhiqiang.wang/111.gif?imageMogr2/thumbnail/!70p)
+![](http://tc.ganzhiqiang.wang/111.gif)
 
