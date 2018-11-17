@@ -3,16 +3,26 @@
 <plist version="1.0">
 <dict>
 	<key>bundleid</key>
-	<string>wang.zhiqiang.news</string>
+	<string>wang.ganzhiqiang.life</string>
 	<key>category</key>
 	<string>Tools</string>
 	<key>connections</key>
 	<dict>
-		<key>9A6C398B-D37E-4D55-9D48-80AB578D994F</key>
+		<key>386D6237-AAB8-4ECA-9591-127CAB27A3F8</key>
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>135AADCD-3CA6-4345-A704-151E2BE28C66</string>
+				<string>E2DB9DD9-17AD-4D0A-A179-ACA2C444ECC7</string>
+				<key>modifiers</key>
+				<integer>1048576</integer>
+				<key>modifiersubtext</key>
+				<string>保存到剪切板</string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>EB8BFF4E-3639-46D2-B6FD-02D0CF9892A9</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -25,13 +35,30 @@
 	<key>createdby</key>
 	<string>nanxuan</string>
 	<key>description</key>
-	<string>今日腾讯头条</string>
+	<string>生活助手（查询新闻、天气等）</string>
 	<key>disabled</key>
 	<false/>
 	<key>name</key>
-	<string>news</string>
+	<string>Life Helper</string>
 	<key>objects</key>
 	<array>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>autopaste</key>
+				<false/>
+				<key>clipboardtext</key>
+				<string>{query}</string>
+				<key>transient</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.clipboard</string>
+			<key>uid</key>
+			<string>E2DB9DD9-17AD-4D0A-A179-ACA2C444ECC7</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
 		<dict>
 			<key>config</key>
 			<dict>
@@ -46,7 +73,7 @@
 				<key>escaping</key>
 				<integer>102</integer>
 				<key>keyword</key>
-				<string>news</string>
+				<string>life</string>
 				<key>queuedelaycustom</key>
 				<integer>3</integer>
 				<key>queuedelayimmediatelyinitially</key>
@@ -56,17 +83,17 @@
 				<key>queuemode</key>
 				<integer>1</integer>
 				<key>runningsubtext</key>
-				<string>正在加载新闻</string>
+				<string>正在加载...</string>
 				<key>script</key>
-				<string>/Users/nanxuan/env/doctor/bin/python news.py</string>
+				<string>python main.py "{query}"</string>
 				<key>scriptargtype</key>
-				<integer>1</integer>
+				<integer>0</integer>
 				<key>scriptfile</key>
 				<string></string>
 				<key>subtext</key>
-				<string>最新要闻</string>
+				<string>生活信息早知道</string>
 				<key>title</key>
-				<string>最新要闻</string>
+				<string>生活信息早知道</string>
 				<key>type</key>
 				<integer>0</integer>
 				<key>withspace</key>
@@ -75,7 +102,7 @@
 			<key>type</key>
 			<string>alfred.workflow.input.scriptfilter</string>
 			<key>uid</key>
-			<string>9A6C398B-D37E-4D55-9D48-80AB578D994F</string>
+			<string>386D6237-AAB8-4ECA-9591-127CAB27A3F8</string>
 			<key>version</key>
 			<integer>2</integer>
 		</dict>
@@ -94,7 +121,7 @@
 			<key>type</key>
 			<string>alfred.workflow.action.openurl</string>
 			<key>uid</key>
-			<string>135AADCD-3CA6-4345-A704-151E2BE28C66</string>
+			<string>EB8BFF4E-3639-46D2-B6FD-02D0CF9892A9</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -103,22 +130,29 @@
 	<string></string>
 	<key>uidata</key>
 	<dict>
-		<key>135AADCD-3CA6-4345-A704-151E2BE28C66</key>
+		<key>386D6237-AAB8-4ECA-9591-127CAB27A3F8</key>
 		<dict>
 			<key>xpos</key>
-			<integer>410</integer>
+			<integer>240</integer>
 			<key>ypos</key>
-			<integer>210</integer>
+			<integer>150</integer>
 		</dict>
-		<key>9A6C398B-D37E-4D55-9D48-80AB578D994F</key>
+		<key>E2DB9DD9-17AD-4D0A-A179-ACA2C444ECC7</key>
 		<dict>
 			<key>xpos</key>
-			<integer>170</integer>
+			<integer>520</integer>
 			<key>ypos</key>
-			<integer>140</integer>
+			<integer>30</integer>
+		</dict>
+		<key>EB8BFF4E-3639-46D2-B6FD-02D0CF9892A9</key>
+		<dict>
+			<key>xpos</key>
+			<integer>530</integer>
+			<key>ypos</key>
+			<integer>170</integer>
 		</dict>
 	</dict>
 	<key>webaddress</key>
-	<string>https://blog.ganzhiqiang.wang/</string>
+	<string>https://blog.ganzhiqiang.wang</string>
 </dict>
 </plist>
